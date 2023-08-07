@@ -33,6 +33,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .product-details {
+    text-align: left;
   }
   
   .discount {
@@ -46,6 +52,7 @@ body {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    width: 300px;
     cursor: pointer;
     border-radius: 5px;
   }
@@ -53,7 +60,90 @@ body {
   .add-to-cart i {
     margin-left: 5px;
   }
+  
+  .shipping-info {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .shipping-info p {
+    margin: 5px 0;
+  }
+  
+  .product-item.selected {
+    background-color: #e0f2e9;
+    border-color: #008000;
+  }
+
+  .options {
+    text-align: left;
+    margin: 10px 0;
+    display: none;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .option span {
+    margin-right: 5px;
+  }
+ 
+  #specifyColor {
+    accent-color: green;
+}
+
+.crossed-out-text {
+    color: grey; /* Grey color for the text */
+    text-decoration: line-through; /* Add a line through the text */
+    position: relative;
+  }
+  
+  .crossed-out-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid grey; /* Grey color for the line */
+    transform: translateY(50%);
+  }
+
+  /* Positioning for the shipping info container */
+.shipping-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .shipping-info {
+    color: #008000; /* Green color for "Free 2 Day Shipping" text */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .total-info {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Positioning for the copyright text */
+.add-to-cart-container {
+    position: relative;
+  }
+  
+  .powered-by-text {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    color: #777;
+  }
+  
 
   h4 {
     color: green;
   }
+
