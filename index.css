@@ -92,7 +92,7 @@ body {
     margin-right: 5px;
   }
  
-  #specifyColor {
+  #product1,#product2,#product3 {
     accent-color: green;
 }
 
