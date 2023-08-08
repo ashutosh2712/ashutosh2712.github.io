@@ -35,10 +35,12 @@ body {
     justify-content: space-between;
     cursor: pointer;
     border-radius: 5px;
+    
     transition: background-color 0.3s, border-color 0.3s;
   }
   
   .product-details {
+    
     text-align: left;
   }
   
@@ -80,12 +82,13 @@ body {
     text-align: left;
     margin: 10px 0;
     display: none;
+    
   }
   
   .option {
     display: flex;
-    align-items: center;
-    margin: 5px 0;
+  align-items: center;
+  margin-right: 10px;
   }
   
   .option span {
