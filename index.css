@@ -31,7 +31,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     cursor: pointer;
     border-radius: 5px;
@@ -55,7 +55,7 @@ body {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    width: 300px;
+    width: 350px;
     cursor: pointer;
     border-radius: 5px;
   }
